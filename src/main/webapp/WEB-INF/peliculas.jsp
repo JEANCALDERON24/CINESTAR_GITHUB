@@ -6,6 +6,8 @@
 <% List<Pelicula> peliculas = (List<Pelicula> ) session.getAttribute("data");
 for(Pelicula pelicula: peliculas){
 %>
+	
+
 <div class="contenido-pelicula">
 <div class="datos-pelicula">
 <h2><%= pelicula.getTitulo() %></h2><br/>
@@ -22,6 +24,6 @@ for(Pelicula pelicula: peliculas){
 </a>
 </div> 
 </div>
-<img src="img/pelicula/<%= pelicula.getId()%>.jpg" width="160" height="226"/><br/><br/>
+	<img src="img/pelicula/<%= pelicula.getId()%>.jpg" width="160" height="226"/><br/><br/>
 </div>
 <% } %>
